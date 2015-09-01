@@ -1,0 +1,48 @@
+{
+  "ProjectName": "UserCreation Hybrid",
+  "ProjectGuid": "38cfd2a7-5f1d-47bd-b1b9-b19582577a3d",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.UserCreationHybrid",
+  "DisplayName": "UserCreation Hybrid",
+  "Author": "",
+  "Description": "UserCreation Hybrid",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{137d5320-80ae-43b4-bc28-632f48911407}",
+  "WP8ProductID": "{022a497e-46ce-43d2-b5b8-8011b50a3817}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.UserCreationHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
