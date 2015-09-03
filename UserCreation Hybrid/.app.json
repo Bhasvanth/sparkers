@@ -1,15 +1,80 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "homeModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Comments",
+          "iconField": true,
+          "imageField": "Comment",
+          "headerField": "UserId",
+          "masterDetails": true,
+          "detailHeaderField": "Location",
+          "detailSubHeaderField": "Picture",
+          "detailDescriptionField": "Text",
+          "detailImageField": "Picture",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "defaultProvider",
+          "emailLabel": "User Name",
+          "emailPlaceholder": "UserName",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "search",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "Email",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "search",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
+      "name": "authenticationView",
+      "title": "Authentication",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "search",
+      "title": "Locate and Book",
+      "addToNavigation": true,
+      "icon": "organize"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "13jdtjtSfleFaL0Z",
-      "everliveUrl": ""
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "drawer",
+  "view": "authenticationView",
+  "skin": "native"
 }
