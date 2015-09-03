@@ -59,7 +59,7 @@
       "name": "search",
       "title": "Locate and Book",
       "addToNavigation": true,
-      "icon": "organize"
+      "icon": "play"
     }
   ],
   "dataProviders": [
