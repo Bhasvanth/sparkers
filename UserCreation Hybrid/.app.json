@@ -156,5 +156,5 @@
   "navigation": "tabstrip",
   "view": "authenticationView",
   "transition": "none",
-  "skin": "native"
+  "skin": "flat"
 }
