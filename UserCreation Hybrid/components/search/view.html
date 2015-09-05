@@ -4,12 +4,14 @@
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
                     <label>Quote of the day
+                        <!-- have to get from static list and roll on -->
                         <input data-bind="value: searchModel.fields.quote" placeholder="Quote" type="text">
                     </label>
                 </li>
                 <li>
                     <label>Recent
                         <select data-bind="value: searchModel.fields.dropdownlist" data-role="dropdownlist">
+                            <!-- have to get the this list from DB -->
                             <option value="First Option">First Option</option>
                             <option value="Second Option">Second Option</option>
                             <option value="Third Option">Third Option</option>
