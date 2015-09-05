@@ -153,7 +153,8 @@
     }
   ],
   "name": "kendoUiMobileApp",
-  "navigation": "listmenu",
-  "transition": "slide",
+  "navigation": "tabstrip",
+  "view": "authenticationView",
+  "transition": "none",
   "skin": "native"
 }

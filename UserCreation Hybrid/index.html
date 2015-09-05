@@ -27,15 +27,18 @@
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
-                <a data-role="backbutton" data-align="left">Back</a>
                 <span data-role="view-title"></span>
-                <a data-align="right" data-role="button" class="nav-button" href="#/">Index</a>
             </div>
         </header>
 
         <!-- application views will be rendered here -->
 
         <footer data-role="footer">
+            <div data-role="tabstrip" id="navigation-container">
+                <a href="components/authenticationView/view.html" data-icon="home">Authentication</a>
+                <a href="components/search/view.html" data-icon="add">Book slot</a>
+                <a href="components/result/view.html" data-icon="organize">Acknowledgements</a>
+            </div>
         </footer>
     </div>
 
@@ -50,14 +53,6 @@
 
         <footer data-role="footer">
         </footer>
-    </div>
-
-    <div data-role="view" data-layout="main" data-title="Index">
-        <ul id="navigation-container" data-role="listview" data-style="inset">
-            <li><a href="components/authenticationView/view.html" data-icon="home">Authentication</a></li>
-            <li><a href="components/search/view.html" data-icon="add">Book slot</a></li>
-            <li><a href="components/result/view.html" data-icon="organize">Acknowledgements</a></li>
-        </ul>
     </div>
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
