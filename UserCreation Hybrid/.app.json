@@ -21,7 +21,8 @@
       ],
       "name": "home",
       "title": "Home",
-      "addToNavigation": false
+      "addToNavigation": true,
+      "icon": "home"
     },
     {
       "type": "view",
