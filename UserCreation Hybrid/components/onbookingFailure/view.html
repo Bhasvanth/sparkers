@@ -1,0 +1,29 @@
+<div data-role="view" data-title="OnbookingFailure" data-layout="main-nonav" data-model="app.onbookingFailure" data-show="app.onbookingFailure.onShow" data-after-show="app.onbookingFailure.afterShow">
+    <div id="onbookingFailureModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li class="group-separator">
+                    <h4 class="group-separator-header">NearByLocation</h4>
+                </li>
+                <li>
+                    <label>nearBy
+                        <select data-bind="value: onbookingFailureModel.fields.nearBy" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: onbookingFailureModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: onbookingFailureModel.submit }">Book!!</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_onbookingFailureModel -->
+        <!-- END_CUSTOM_CODE_onbookingFailureModel -->
+    </div>
+    <!-- START_CUSTOM_CODE_onbookingFailure -->
+    <!-- END_CUSTOM_CODE_onbookingFailure -->
+</div>

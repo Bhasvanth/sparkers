@@ -21,8 +21,7 @@
       ],
       "name": "home",
       "title": "Home",
-      "addToNavigation": true,
-      "icon": "home"
+      "addToNavigation": false
     },
     {
       "type": "view",
@@ -84,8 +83,7 @@
             }
           ],
           "name": "searchModel",
-          "submitButton": "Confirm",
-          "cancelButton": "Cancel"
+          "submitButton": "Book"
         }
       ],
       "name": "search",
@@ -113,6 +111,34 @@
       "title": "Acknowledgements",
       "addToNavigation": true,
       "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "group",
+              "title": "NearByLocation",
+              "inputType": "group-separator"
+            },
+            {
+              "type": "field",
+              "name": "nearBy",
+              "title": "nearBy",
+              "inputType": "dropdownlist"
+            }
+          ],
+          "name": "onbookingFailureModel",
+          "submitButton": "Book!!",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "onbookingFailure",
+      "title": "OnbookingFailure",
+      "addToNavigation": false
     }
   ],
   "dataProviders": [

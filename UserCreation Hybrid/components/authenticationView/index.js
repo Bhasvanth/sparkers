@@ -75,11 +75,9 @@ app.authenticationView = kendo.observable({
                     email = model.email.toLowerCase(),
                     password = model.password,
                     displayName = model.displayName,
-                    userType = model.userType,
                     attrs = {
                         Email: email,
-                        DisplayName: displayName,
-                        userType: userType
+                        DisplayName: displayName
                     };
 
                 if (!model.validateData(model)) {
