@@ -8,15 +8,13 @@
           "type": "list",
           "name": "homeModel",
           "dataProvider": "defaultProvider",
-          "collection": "Comments",
-          "iconField": true,
-          "imageField": "Comment",
-          "headerField": "UserId",
+          "collection": "Activities",
+          "iconField": false,
+          "headerField": "Text",
           "masterDetails": true,
-          "detailHeaderField": "Location",
-          "detailSubHeaderField": "Picture",
-          "detailDescriptionField": "Text",
-          "detailImageField": "Picture",
+          "detailHeaderField": "Text",
+          "detailDescriptionField": "Likes",
+          "detailImageField": "Likes",
           "pullToRefresh": true,
           "endlessScroll": true
         }
@@ -55,11 +53,66 @@
     },
     {
       "type": "view",
-      "components": [],
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "quote",
+              "title": "Quote of the day",
+              "inputType": "text",
+              "placeholder": "Quote"
+            },
+            {
+              "type": "field",
+              "name": "dropdownlist",
+              "title": "Recent",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "date",
+              "title": "Date",
+              "inputType": "date"
+            },
+            {
+              "type": "field",
+              "name": "time",
+              "title": "Time",
+              "inputType": "time"
+            }
+          ],
+          "name": "searchModel",
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
       "name": "search",
-      "title": "Locate and Book",
+      "title": "Book slot",
       "addToNavigation": true,
       "icon": "add"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "resultModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "headerField": "Location",
+          "masterDetails": true,
+          "detailHeaderField": "Text",
+          "detailImageField": "Picture",
+          "pullToRefresh": true,
+          "endlessScroll": true
+        }
+      ],
+      "name": "result",
+      "title": "Acknowledgements",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
   "dataProviders": [
@@ -74,7 +127,8 @@
     }
   ],
   "name": "kendoUiMobileApp",
-  "navigation": "drawer",
+  "navigation": "tabstrip",
   "view": "authenticationView",
+  "transition": "slide",
   "skin": "native"
 }

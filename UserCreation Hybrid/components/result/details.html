@@ -1,4 +1,4 @@
-<div data-role="view" data-title="Details" data-model="app.home.homeModel" data-bind="events: { show: detailsShow }">
+<div data-role="view" data-title="Details" data-model="app.result.resultModel" data-bind="events: { show: detailsShow }">
     <header data-role="header">
         <div data-role="navbar" class="header-text">
             <a data-role="backbutton" data-align="left">Back</a>
@@ -7,8 +7,7 @@
     </header>
 
 
-    <p data-bind="text: currentItem.Likes"></p>
-    <img data-bind="attr: { src: currentItem.LikesUrl }" width="100%" height="auto">
-    <!-- START_CUSTOM_CODE_homeModel -->
-    <!-- END_CUSTOM_CODE_homeModel -->
+    <img data-bind="attr: { src: currentItem.PictureUrl }" width="100%" height="auto">
+    <!-- START_CUSTOM_CODE_resultModel -->
+    <!-- END_CUSTOM_CODE_resultModel -->
 </div>

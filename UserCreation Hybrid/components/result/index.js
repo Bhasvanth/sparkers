@@ -1,12 +1,12 @@
 'use strict';
 
-app.home = kendo.observable({
+app.result = kendo.observable({
     onShow: function() {},
     afterShow: function() {}
 });
 
-// START_CUSTOM_CODE_home
-// END_CUSTOM_CODE_home
+// START_CUSTOM_CODE_result
+// END_CUSTOM_CODE_result
 (function(parent) {
     var dataProvider = app.data.defaultProvider,
         processImage = function(img) {
@@ -59,8 +59,8 @@ app.home = kendo.observable({
             schema: {
                 model: {
                     fields: {
-                        'Text': {
-                            field: 'Text',
+                        'Location': {
+                            field: 'Location',
                             defaultValue: ''
                         },
                     }
@@ -71,26 +71,26 @@ app.home = kendo.observable({
             pageSize: 50
         },
         dataSource = new kendo.data.DataSource(dataSourceOptions),
-        homeModel = kendo.observable({
+        resultModel = kendo.observable({
             dataSource: dataSource,
             itemClick: function(e) {
-                app.mobileApp.navigate('#components/home/details.html?uid=' + e.dataItem.uid);
+                app.mobileApp.navigate('#components/result/details.html?uid=' + e.dataItem.uid);
             },
             detailsShow: function(e) {
                 var item = e.view.params.uid,
-                    dataSource = homeModel.get('dataSource'),
+                    dataSource = resultModel.get('dataSource'),
                     itemModel = dataSource.getByUid(item);
-                itemModel.LikesUrl = processImage(itemModel.Likes);
+                itemModel.PictureUrl = processImage(itemModel.Picture);
                 if (!itemModel.Text) {
                     itemModel.Text = String.fromCharCode(160);
                 }
-                homeModel.set('currentItem', itemModel);
+                resultModel.set('currentItem', itemModel);
             },
             currentItem: null
         });
 
-    parent.set('homeModel', homeModel);
-})(app.home);
+    parent.set('resultModel', resultModel);
+})(app.result);
 
-// START_CUSTOM_CODE_homeModel
-// END_CUSTOM_CODE_homeModel
+// START_CUSTOM_CODE_resultModel
+// END_CUSTOM_CODE_resultModel
