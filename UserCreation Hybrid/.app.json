@@ -84,7 +84,8 @@
             }
           ],
           "name": "searchModel",
-          "submitButton": "Book"
+          "submitButton": "Book",
+          "cancelButton": "Back"
         }
       ],
       "name": "search",

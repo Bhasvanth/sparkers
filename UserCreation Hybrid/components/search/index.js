@@ -15,7 +15,8 @@ app.search = kendo.observable({
             dropdownlist: '',
             quote: '',
         },
-        submit: function() {}
+        submit: function() {},
+        cancel: function() {}
     });
 
     parent.set('searchModel', searchModel);
