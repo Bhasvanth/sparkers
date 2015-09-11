@@ -72,6 +72,13 @@
             },
             {
               "type": "field",
+              "name": "search1",
+              "title": "Search",
+              "inputType": "search",
+              "placeholder": "Search"
+            },
+            {
+              "type": "field",
               "name": "date",
               "title": "Date",
               "inputType": "date"

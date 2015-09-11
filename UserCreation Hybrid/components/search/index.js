@@ -12,6 +12,7 @@ app.search = kendo.observable({
         fields: {
             time: '',
             date: '',
+            search1: '',
             dropdownlist: '',
             quote: '',
         },
