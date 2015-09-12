@@ -49,7 +49,7 @@
       "name": "authenticationView",
       "title": "Authentication",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "settings"
     },
     {
       "type": "view",

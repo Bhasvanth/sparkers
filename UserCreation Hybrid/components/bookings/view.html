@@ -1,0 +1,50 @@
+<div data-role="view" data-title="Booking" data-layout="main" data-model="app.bookings" data-show="app.bookings.onShow" data-after-show="app.bookings.afterShow">
+    <div id="bookingsModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Location
+                        <input data-bind="value: bookingsModel.fields.selectedLocation" placeholder="Quote" type="text" id="selectedLocation" >
+                    </label>
+                </li>
+                <!--<li>
+                    <label>Recent
+                        <select data-bind="value: searchModel.fields.dropdownlist" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>-->
+                <li>
+                    <label>Slots
+                        <select data-bind="value: searchModel.fields.slots" data-role="dropdownlist">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Date
+                        <input data-bind="value: bookingsModel.fields.date" type="date" required>
+                    </label>
+                </li>
+                <li>
+                    <label>Time
+                        <input data-bind="value: bookingsModel.fields.time" type="time" required>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: bookingsModel.cancel }">Back</a>
+                <a class="primary" data-role="button" data-bind="events: { click: bookingsModel.submit }">Confirm</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_searchModel -->
+        <!-- END_CUSTOM_CODE_searchModel -->
+    </div>
+    <!-- START_CUSTOM_CODE_search -->
+    <!-- END_CUSTOM_CODE_search -->
+</div>

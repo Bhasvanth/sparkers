@@ -20,14 +20,15 @@
 
 <body id="kendoUiMobileApp">
     <script src="components/onbookingFailure/index.js"></script>
-    <script src="components/result/index.js"></script>
-    <script src="components/search/index.js"></script>
+    <script src="components/orders/index.js"></script>
+    <script src="components/bookings/index.js"></script>
     <script src="components/authenticationView/index.js"></script>
     <script src="components/home/index.js"></script>
     <div data-role="layout" data-id="main">
         <header data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
+                <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
             </div>
         </header>
 
@@ -35,13 +36,28 @@
 
         <footer data-role="footer">
             <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home">Home</a>
-                <a href="components/authenticationView/view.html" data-icon="home">Authentication</a>
-                <a href="components/search/view.html" data-icon="add">Book slot</a>
-                <a href="components/result/view.html" data-icon="organize">Acknowledgements</a>
+                
+                <a href="components/bookings/view.html" data-icon="add">Bookings</a>
+                <a href="components/orders/view.html" data-icon="organize">Orders</a>
             </div>
         </footer>
     </div>
+    <div data-role="drawer" id="appDrawer" style="width: 270px" data-title="Navigation">
+    <div data-role="header">
+      <div data-role="navbar">
+        <span data-role="view-title"></span>
+      </div>
+    </div>
+    <ul data-role="listview">
+      <li>
+       <a href="components/home/view.html" data-icon="home">Home</a>
+      </li>
+      <li>
+        <a href="components/authenticationView/view.html" data-icon="settings">My Account</a>
+      </li>
+      
+    </ul>
+  </div>
 
     <div data-role="layout" data-id="main-nonav">
         <header data-role="header">

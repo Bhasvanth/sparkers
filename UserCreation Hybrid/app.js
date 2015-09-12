@@ -15,7 +15,8 @@
                 // and feel of the operating system
                 skin: 'flat',
                 // the application needs to know which view to load first
-                initial: 'components/authenticationView/view.html',
+                //initial: 'components/authenticationView/view.html',
+                 initial: 'components/home/view.html',
                 statusBarStyle: 'black-translucent'
             });
         });
