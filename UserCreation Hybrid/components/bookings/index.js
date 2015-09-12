@@ -13,18 +13,18 @@ app.bookings = kendo.observable({
 (function(parent) {
     var bookingsModel = kendo.observable({
         fields: {
-            time: '',
+            start_time: '',
             date: '',
             search1: '',
-            slots: '',
+            end_time: '',
             selectedLocation: '',
         },
         submit: function(e) {
             var selectedLocation = this.bookingsModel.fields.selectedLocation;
             var date = this.bookingsModel.fields.date;
-            var time = this.bookingsModel.fields.time;
-            var slots = this.bookingsModel.fields.slots;
-            var queryString = "location="+selectedLocation+"&date="+date+"&time="+time+"&slots="+slots;
+            var start_time = this.bookingsModel.fields.start_time;
+            var end_time = this.bookingsModel.fields.end_time;
+            var queryString = "location="+selectedLocation+"&date="+date+"&start_time="+start_time+"&end_time="+end_time;
             //alert(queryString);
             
             this.navigator.notification.alert(

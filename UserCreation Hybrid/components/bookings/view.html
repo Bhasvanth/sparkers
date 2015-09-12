@@ -16,23 +16,20 @@
                         </select>
                     </label>
                 </li>-->
-                <li>
-                    <label>Slots
-                        <select data-bind="value: searchModel.fields.slots" data-role="dropdownlist">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </label>
-                </li>
+                
                 <li>
                     <label>Date
                         <input data-bind="value: bookingsModel.fields.date" type="date" required>
                     </label>
                 </li>
                 <li>
-                    <label>Time
-                        <input data-bind="value: bookingsModel.fields.time" type="time" required>
+                    <label>Start Time
+                        <input data-bind="value: bookingsModel.fields.start_time" type="time" required>
+                    </label>
+                </li>
+                <li>
+                    <label>End Time
+                        <input data-bind="value: bookingsModel.fields.end_time" type="time" required>
                     </label>
                 </li>
             </ul>

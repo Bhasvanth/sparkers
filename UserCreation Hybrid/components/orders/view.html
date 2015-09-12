@@ -2,13 +2,14 @@
     <!-- START_CUSTOM_CODE_result -->
     <!-- END_CUSTOM_CODE_result -->
     <!--  Certain features like grouping and inset styling are not supported when endless scroll is enabled. -->
-    <ul data-role="listview" data-style="" data-template="resultModelTemplate" data-bind="{ source: resultModel.orderDataSource, events: {click: resultModel.itemClick}}" data-pull-to-refresh="true" >
+    <ul data-role="listview" data-style="inset" data-template="resultModelTemplate" data-bind="{ source: resultModel.orderDataSource, events: {click: resultModel.itemClick}}" data-pull-to-refresh="true" >
     </ul>
     <!-- START_CUSTOM_CODE_resultModel -->
     <!-- END_CUSTOM_CODE_resultModel -->
     <script type="text/x-kendo-template" id="resultModelTemplate">
         <div class="image-with-text">
-            <h3>#: data['order_id'] #</h3>
+           
+            <a data-bind="click : navigateToBooking" data-transition="slide">#: data.order_id # </a>
 
         </div>
     </script>
