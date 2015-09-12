@@ -26,12 +26,21 @@ app.bookings = kendo.observable({
             var slots = this.bookingsModel.fields.slots;
             var queryString = "location="+selectedLocation+"&date="+date+"&time="+time+"&slots="+slots;
             //alert(queryString);
-            app.mobileApp.navigate('components/orders/view.html?'+queryString);
+            
+            this.navigator.notification.alert(
+    "Your parking reservation has been confirmed.",             // the message
+    function() {},                      // a callback
+    "Confirmation", // a title
+    "OK"                                // the button text
+);
+            //app.mobileApp.navigate('components/orders/view.html?'+queryString);
             //alert(this.bookingsModel.fields.time);
         },
         cancel: function() {
             app.mobileApp.navigate("#:back");
-        }
+        },
+ 
+    
     });
 
     parent.set('bookingsModel', bookingsModel);

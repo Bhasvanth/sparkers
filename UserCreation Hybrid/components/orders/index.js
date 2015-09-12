@@ -17,6 +17,12 @@ app.result = kendo.observable({
             slots: '',
             selectedLocation: '',
         },
+        orderDataSource : new kendo.data.DataSource({
+          data :[{order_id:"ABVHYO", location : "PVR - Madhapur", start_time : "1 PM", end_time : "2 PM", date : "09-Sep-15"},
+                 {order_id:"CFGHYS", location : "In Orbit ", start_time : "10:15 AM", end_time : "11:00 AM", date : "12-Sep-15"},
+                 {order_id:"MLKLUI", location : "GVK One", start_time : "1 PM", end_time : "2 PM", date : "13-Sep-15"},
+               ],
+      }),
         
     });
         
